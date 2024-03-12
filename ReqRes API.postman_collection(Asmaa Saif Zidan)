@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "0b7d2fbb-074e-4f83-a015-a514c9f2520b",
+		"name": "ReqRes API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32872262"
+	},
+	"item": [
+		{
+			"name": "ResourceList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Task}}/{resource}\n",
+					"host": [
+						"{{Task}}"
+					],
+					"path": [
+						"{resource}\n"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2024-02-12",
+							"disabled": true
+						},
+						{
+							"key": "sortBy",
+							"value": "publishedAt",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UsersList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Task}}/users\n",
+					"host": [
+						"{{Task}}"
+					],
+					"path": [
+						"users\n"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "eg",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "ramadan",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetches aUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Task}}/user/6\n",
+					"host": [
+						"{{Task}}"
+					],
+					"path": [
+						"user",
+						"6\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update a user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"updatedAt\": \"Asmaa Saif Zidan \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/user/6\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"user",
+						"6\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUserPatch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users/5\n?name=Asmaa Saif Zidan ",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"5\n"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Asmaa Saif Zidan "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAfterUpdate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete aUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users/{5}\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"{5}\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ResUnkown",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/{resource}/13\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"{resource}",
+						"13\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update res unkowen",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/{resource}/{5}\n?year=2005",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"{resource}",
+						"{5}\n"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2005"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update resours by patch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/{resource}/{5}\n?year=2005",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"{resource}",
+						"{5}\n"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2005"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteResource",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/{resource}/{5}\n?year=2005",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"{resource}",
+						"{5}\n"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2005"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatAsession",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \" Asmaa\",\r\n  \"email\": \"Task3@gmail.com\",\r\n  \"password\": \"123123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/login\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"login\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Auser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \" Asmaa\",\r\n  \"email\": \"Task3@gmail.com\",\r\n  \"password\": \"123123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/register\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"register\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ends A session",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/logout\n",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"logout\n"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Task",
+			"value": "https://reqres.in/api",
+			"type": "string"
+		}
+	]
+}
