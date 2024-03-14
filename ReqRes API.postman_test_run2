@@ -1,0 +1,669 @@
+{
+	"id": "b5eef6e5-6ebe-4fb8-9d26-b300a9e73b45",
+	"name": "ReqRes API",
+	"timestamp": "2024-03-14T04:02:33.398Z",
+	"collection_id": "32872262-0b7d2fbb-074e-4f83-a015-a514c9f2520b",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 46,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-14T04:02:29.731Z",
+	"totalFail": 5,
+	"results": [
+		{
+			"id": "2a0b7e50-fab2-4894-a984-09c5c275f7d1",
+			"name": "ResourceList",
+			"url": "https://reqres.in/api/{resource}\n",
+			"time": 65,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Verify that the 'data' array is present in the response and contains at least one element": true,
+				"Verify the existence of the 'support' object": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the 'data' array is present in the response and contains at least one element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify the existence of the 'support' object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				65
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Verify that the 'data' array is present in the response and contains at least one element": true,
+					"Verify the existence of the 'support' object": true
+				}
+			]
+		},
+		{
+			"id": "06a9eea7-6559-4aa2-9dd8-aec933ceca61",
+			"name": "UsersList",
+			"url": "https://reqres.in/api/users\n",
+			"time": 60,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Verify that the 'data' array is present in the response and contains the expected number of elements": false,
+				"Verify the support object exists": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the 'data' array is present in the response and contains the expected number of elements": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Verify the support object exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				60
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Verify that the 'data' array is present in the response and contains the expected number of elements": false,
+					"Verify the support object exists": true
+				}
+			]
+		},
+		{
+			"id": "78e12d01-7808-470a-9890-831166f4956e",
+			"name": "Fetches aUser",
+			"url": "https://reqres.in/api/user/6\n",
+			"time": 61,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"ID is a non-negative integer": true,
+				"Year is a non-negative integer": true,
+				"Name should be a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ID is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Year is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name should be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				61
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"ID is a non-negative integer": true,
+					"Year is a non-negative integer": true,
+					"Name should be a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "d1804269-46a2-4286-8728-a4a7f129fef9",
+			"name": "update a user",
+			"url": "https://reqres.in/api/user/6\n",
+			"time": 160,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required field 'updatedAt'": true,
+				"Verify updatedAt is in a valid date format": true,
+				"Response content type is 'application/json'": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field 'updatedAt'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify updatedAt is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response content type is 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required field 'updatedAt'": true,
+					"Verify updatedAt is in a valid date format": true,
+					"Response content type is 'application/json'": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "e229f910-fb7e-4a85-9db6-569c4d9c0548",
+			"name": "UpdateUserPatch",
+			"url": "https://reqres.in/api/users/5\n?name=Asmaa Saif Zidan ",
+			"time": 151,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type is application/json": true,
+				"Response has the required field - updatedAt": true,
+				"updatedAt is a non-empty string": true,
+				"Name is updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - updatedAt": {
+					"pass": 1,
+					"fail": 0
+				},
+				"updatedAt is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				151
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type is application/json": true,
+					"Response has the required field - updatedAt": true,
+					"updatedAt is a non-empty string": true,
+					"Name is updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "621ea4be-3b86-4fe1-abe6-cbaf79716aaa",
+			"name": "GetAfterUpdate",
+			"url": "https://reqres.in/api/users\n",
+			"time": 59,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Validate page, per_page, total, and total_pages fields": true,
+				"Verify that the 'data' array is present in the response and contains at least one element": true,
+				"Verify that the 'support' object is present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate page, per_page, total, and total_pages fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the 'data' array is present in the response and contains at least one element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the 'support' object is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				59
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Validate page, per_page, total, and total_pages fields": true,
+					"Verify that the 'data' array is present in the response and contains at least one element": true,
+					"Verify that the 'support' object is present": true
+				}
+			]
+		},
+		{
+			"id": "ade670ba-62a9-46b2-baae-f1b84244d2c5",
+			"name": "Delete aUser",
+			"url": "https://reqres.in/api/users/{5}\n",
+			"time": 137,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				137
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f30eb3c2-aa6a-47f0-875c-60cfa1c8d637",
+			"name": "Get ResUnkown",
+			"url": "https://reqres.in/api/{resource}/13\n",
+			"time": 63,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				63
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "08281311-9c37-4be6-99a6-ee2c4338763b",
+			"name": "Update res unkowen",
+			"url": "https://reqres.in/api/{resource}/{5}\n?year=2005",
+			"time": 142,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required field - updatedAt": true,
+				"updatedAt is in a valid date format": true,
+				"Year in request URL matches value in response": false,
+				"Content-Type header is set to 'application/json'": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - updatedAt": {
+					"pass": 1,
+					"fail": 0
+				},
+				"updatedAt is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Year in request URL matches value in response": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type header is set to 'application/json'": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				142
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required field - updatedAt": true,
+					"updatedAt is in a valid date format": true,
+					"Year in request URL matches value in response": false,
+					"Content-Type header is set to 'application/json'": false
+				}
+			]
+		},
+		{
+			"id": "e3fdc3d9-e23c-4e32-80b2-2143e7609967",
+			"name": "Update resours by patch",
+			"url": "https://reqres.in/api/{resource}/{5}\n?year=2005",
+			"time": 137,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required field - updatedAt": true,
+				"updatedAt is in a valid date format": true,
+				"Response Content-Type is application/json": true,
+				"Year parameter is correctly passed and equals 2005": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - updatedAt": {
+					"pass": 1,
+					"fail": 0
+				},
+				"updatedAt is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Year parameter is correctly passed and equals 2005": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				137
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required field - updatedAt": true,
+					"updatedAt is in a valid date format": true,
+					"Response Content-Type is application/json": true,
+					"Year parameter is correctly passed and equals 2005": true
+				}
+			]
+		},
+		{
+			"id": "5bb1aa90-50d0-4a0c-8183-3a7ef8679f5b",
+			"name": "DeleteResource",
+			"url": "https://reqres.in/api/{resource}/{5}\n?year=2005",
+			"time": 132,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				132
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "bb57757b-e189-484a-8078-74b5a055c533",
+			"name": "CreatAsession",
+			"url": "https://reqres.in/api/login\n",
+			"time": 135,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields": true,
+				"Email is in a valid format": true,
+				"Username is a non-empty string": true,
+				"Password is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Username is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Password is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				135
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields": true,
+					"Email is in a valid format": true,
+					"Username is a non-empty string": true,
+					"Password is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "21880b38-8a41-4427-9c46-4863aca45323",
+			"name": "Create Auser",
+			"url": "https://reqres.in/api/register\n",
+			"time": 132,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has required fields": true,
+				"Email is in a valid format": true,
+				"Password is a non-empty string": true,
+				"ID is a positive integer": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Password is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ID is a positive integer": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				132
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has required fields": true,
+					"Email is in a valid format": true,
+					"Password is a non-empty string": true,
+					"ID is a positive integer": false
+				}
+			]
+		},
+		{
+			"id": "58e80cbd-612b-4112-98e4-d2d2293ae08b",
+			"name": "Ends A session",
+			"url": "https://reqres.in/api/logout\n",
+			"time": 135,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Content-Type header is set to application/json": false,
+				"Response has the required fields - id and createdAt": true,
+				"Id is a non-empty string": true,
+				"CreatedAt is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is set to application/json": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required fields - id and createdAt": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CreatedAt is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				135
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Content-Type header is set to application/json": false,
+					"Response has the required fields - id and createdAt": true,
+					"Id is a non-empty string": true,
+					"CreatedAt is in a valid date format": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1569,
+	"collection": {
+		"requests": [
+			{
+				"id": "2a0b7e50-fab2-4894-a984-09c5c275f7d1",
+				"method": "GET"
+			},
+			{
+				"id": "06a9eea7-6559-4aa2-9dd8-aec933ceca61",
+				"method": "GET"
+			},
+			{
+				"id": "78e12d01-7808-470a-9890-831166f4956e",
+				"method": "GET"
+			},
+			{
+				"id": "d1804269-46a2-4286-8728-a4a7f129fef9",
+				"method": "PUT"
+			},
+			{
+				"id": "e229f910-fb7e-4a85-9db6-569c4d9c0548",
+				"method": "PATCH"
+			},
+			{
+				"id": "621ea4be-3b86-4fe1-abe6-cbaf79716aaa",
+				"method": "GET"
+			},
+			{
+				"id": "ade670ba-62a9-46b2-baae-f1b84244d2c5",
+				"method": "DELETE"
+			},
+			{
+				"id": "f30eb3c2-aa6a-47f0-875c-60cfa1c8d637",
+				"method": "GET"
+			},
+			{
+				"id": "08281311-9c37-4be6-99a6-ee2c4338763b",
+				"method": "PUT"
+			},
+			{
+				"id": "e3fdc3d9-e23c-4e32-80b2-2143e7609967",
+				"method": "PATCH"
+			},
+			{
+				"id": "5bb1aa90-50d0-4a0c-8183-3a7ef8679f5b",
+				"method": "DELETE"
+			},
+			{
+				"id": "bb57757b-e189-484a-8078-74b5a055c533",
+				"method": "POST"
+			},
+			{
+				"id": "21880b38-8a41-4427-9c46-4863aca45323",
+				"method": "POST"
+			},
+			{
+				"id": "58e80cbd-612b-4112-98e4-d2d2293ae08b",
+				"method": "POST"
+			}
+		]
+	}
+}

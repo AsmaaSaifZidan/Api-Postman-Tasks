@@ -1,0 +1,442 @@
+{
+	"id": "d60d09ff-dfa3-4a92-8fbc-112a47abe3cd",
+	"name": "ReqRes API",
+	"timestamp": "2024-03-14T03:57:50.029Z",
+	"collection_id": "32872262-0b7d2fbb-074e-4f83-a015-a514c9f2520b",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-14T03:57:36.694Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "2a0b7e50-fab2-4894-a984-09c5c275f7d1",
+			"name": "ResourceList",
+			"url": "https://reqres.in/api/{resource}\n",
+			"time": 59,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				63,
+				65,
+				60,
+				58,
+				59
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "06a9eea7-6559-4aa2-9dd8-aec933ceca61",
+			"name": "UsersList",
+			"url": "https://reqres.in/api/users\n",
+			"time": 60,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				59,
+				60,
+				59,
+				57,
+				60
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "78e12d01-7808-470a-9890-831166f4956e",
+			"name": "Fetches aUser",
+			"url": "https://reqres.in/api/user/6\n",
+			"time": 58,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				59,
+				58,
+				63,
+				59,
+				58
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "d1804269-46a2-4286-8728-a4a7f129fef9",
+			"name": "update a user",
+			"url": "https://reqres.in/api/user/6\n",
+			"time": 142,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				145,
+				126,
+				143,
+				136,
+				142
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "e229f910-fb7e-4a85-9db6-569c4d9c0548",
+			"name": "UpdateUserPatch",
+			"url": "https://reqres.in/api/users/5\n?name=Asmaa Saif Zidan ",
+			"time": 131,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				139,
+				132,
+				131,
+				130,
+				131
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "621ea4be-3b86-4fe1-abe6-cbaf79716aaa",
+			"name": "GetAfterUpdate",
+			"url": "https://reqres.in/api/users\n",
+			"time": 57,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				64,
+				57,
+				59,
+				57,
+				57
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "ade670ba-62a9-46b2-baae-f1b84244d2c5",
+			"name": "Delete aUser",
+			"url": "https://reqres.in/api/users/{5}\n",
+			"time": 125,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				129,
+				129,
+				129,
+				132,
+				125
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "f30eb3c2-aa6a-47f0-875c-60cfa1c8d637",
+			"name": "Get ResUnkown",
+			"url": "https://reqres.in/api/{resource}/13\n",
+			"time": 64,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				137,
+				59,
+				56,
+				59,
+				64
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "08281311-9c37-4be6-99a6-ee2c4338763b",
+			"name": "Update res unkowen",
+			"url": "https://reqres.in/api/{resource}/{5}\n?year=2005",
+			"time": 137,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				135,
+				129,
+				137,
+				141,
+				137
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "e3fdc3d9-e23c-4e32-80b2-2143e7609967",
+			"name": "Update resours by patch",
+			"url": "https://reqres.in/api/{resource}/{5}\n?year=2005",
+			"time": 123,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				132,
+				136,
+				130,
+				130,
+				123
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "5bb1aa90-50d0-4a0c-8183-3a7ef8679f5b",
+			"name": "DeleteResource",
+			"url": "https://reqres.in/api/{resource}/{5}\n?year=2005",
+			"time": 137,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				126,
+				133,
+				130,
+				129,
+				137
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "bb57757b-e189-484a-8078-74b5a055c533",
+			"name": "CreatAsession",
+			"url": "https://reqres.in/api/login\n",
+			"time": 132,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				142,
+				131,
+				132,
+				127,
+				132
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "21880b38-8a41-4427-9c46-4863aca45323",
+			"name": "Create Auser",
+			"url": "https://reqres.in/api/register\n",
+			"time": 135,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				132,
+				131,
+				129,
+				134,
+				135
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "58e80cbd-612b-4112-98e4-d2d2293ae08b",
+			"name": "Ends A session",
+			"url": "https://reqres.in/api/logout\n",
+			"time": 129,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				131,
+				131,
+				133,
+				127,
+				129
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		}
+	],
+	"count": 5,
+	"totalTime": 7526,
+	"collection": {
+		"requests": [
+			{
+				"id": "2a0b7e50-fab2-4894-a984-09c5c275f7d1",
+				"method": "GET"
+			},
+			{
+				"id": "06a9eea7-6559-4aa2-9dd8-aec933ceca61",
+				"method": "GET"
+			},
+			{
+				"id": "78e12d01-7808-470a-9890-831166f4956e",
+				"method": "GET"
+			},
+			{
+				"id": "d1804269-46a2-4286-8728-a4a7f129fef9",
+				"method": "PUT"
+			},
+			{
+				"id": "e229f910-fb7e-4a85-9db6-569c4d9c0548",
+				"method": "PATCH"
+			},
+			{
+				"id": "621ea4be-3b86-4fe1-abe6-cbaf79716aaa",
+				"method": "GET"
+			},
+			{
+				"id": "ade670ba-62a9-46b2-baae-f1b84244d2c5",
+				"method": "DELETE"
+			},
+			{
+				"id": "f30eb3c2-aa6a-47f0-875c-60cfa1c8d637",
+				"method": "GET"
+			},
+			{
+				"id": "08281311-9c37-4be6-99a6-ee2c4338763b",
+				"method": "PUT"
+			},
+			{
+				"id": "e3fdc3d9-e23c-4e32-80b2-2143e7609967",
+				"method": "PATCH"
+			},
+			{
+				"id": "5bb1aa90-50d0-4a0c-8183-3a7ef8679f5b",
+				"method": "DELETE"
+			},
+			{
+				"id": "bb57757b-e189-484a-8078-74b5a055c533",
+				"method": "POST"
+			},
+			{
+				"id": "21880b38-8a41-4427-9c46-4863aca45323",
+				"method": "POST"
+			},
+			{
+				"id": "58e80cbd-612b-4112-98e4-d2d2293ae08b",
+				"method": "POST"
+			}
+		]
+	}
+}
